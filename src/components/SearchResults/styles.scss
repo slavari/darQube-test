@@ -1,0 +1,17 @@
+@import "../../assets/scss/utils/app.scss";
+
+.searchResults {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 20px !important;
+
+  .news {
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: $smTableWidth) {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../assets/scss/utils/app.scss";
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  // .pagination__button
+  &__button {
+    width: 116px;
+    height: 26px;
+    text-align: center;
+    border-radius: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $mainFontColor;
+    background-color: $mainButtonColor;
+    font-size: rem(10);
+    margin-left: 20px;
+  }
+
+  // .pagination__number
+  &__number {
+    font-size: rem(12);
+    display: flex;
+    margin-left: 20px;
+
+    span {
+      opacity: 0.5;
+    }
+  }
+}

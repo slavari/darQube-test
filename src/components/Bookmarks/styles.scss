@@ -1,0 +1,13 @@
+@import "../../assets/scss/utils/app.scss";
+
+.bookmarks {
+  cursor: pointer;
+  svg {
+    @include size(15px);
+
+    fill: $mainFontColor;
+    stroke: $mainFontColor;
+    opacity: 0.5;
+    stroke-width: 30px;
+  }
+}

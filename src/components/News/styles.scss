@@ -1,0 +1,131 @@
+@import "../../assets/scss/utils/app.scss";
+
+.news {
+  width: 280px;
+  height: 425px;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 28px 25px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  box-shadow: inset 0 -60px 20px 0px rgba(0, 0, 0, 0.5);
+
+  @media screen and (max-width: $smTableWidth) {
+    width: 100%;
+    height: 220px;
+  }
+
+  // .news__latest
+  &__latest {
+    cursor: auto;
+    width: 478px;
+    height: 628px;
+    position: sticky;
+    top: 90px;
+
+    @media screen and (max-width: $smDesktopWidth) {
+      position: relative;
+      top: 0;
+      width: 100%;
+      height: 220px;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .news__top
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  // .news__related
+  &__related {
+    border: 1px solid $mainFontColor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    font-size: rem(10);
+    padding: 0 5px;
+    width: 86px;
+    height: 20px;
+  }
+
+  // .news__latestMark
+  &__latestMark {
+    background-color: $blood;
+    width: 95px;
+    height: 20px;
+    border-radius: 2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: rem(8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  // .news__headline
+  &__headline {
+    font-weight: 500;
+    font-size: rem(20);
+    margin-bottom: 20px;
+  }
+
+  // .news__summary
+  &__summary {
+    opacity: 0.75;
+    font-size: rem(12);
+    margin-bottom: 20px;
+  }
+
+  // .news__sourceItems
+  &__sourceItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .news__sourceInfo
+  &__sourceInfo {
+    display: flex;
+    align-items: center;
+    font-size: rem(12);
+  }
+
+  // .news__source
+  &__source {
+    padding-right: 15px;
+    border-right: 1px solid rgba($mainFontColor, 0.5);
+    max-width: 80px;
+  }
+
+  // .news__date
+  &__date {
+    margin-left: 15px;
+    opacity: 0.5;
+  }
+
+  // .news__read
+  &__read {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 8px;
+
+    svg {
+      @include size(20px);
+      fill: rgba($mainFontColor, 0.25);
+      margin-right: 8px;
+    }
+
+    p {
+      font-size: rem(12);
+      font-weight: 700;
+    }
+  }
+}

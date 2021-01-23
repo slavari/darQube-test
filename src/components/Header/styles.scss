@@ -1,0 +1,69 @@
+@import "../../assets/scss/utils/app.scss";
+
+.header {
+  height: rem(91);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 0 30px;
+  z-index: 1;
+  background-color: $backgroundColor;
+  display: flex;
+  align-items: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  //   .header__menu
+  &__menu {
+  }
+
+  //   .header__menuItem
+  &__menuItem {
+    font-size: rem(28);
+    font-weight: 700;
+    color: $mainFontColor;
+    margin-right: rem(25);
+    opacity: 0.5;
+    height: 30px;
+
+    // .header__menuItem_active
+    &_active {
+      opacity: 1;
+    }
+  }
+
+  //   .header__search
+  &__search {
+    background-color: $blackDark;
+    border-radius: 4px;
+    height: 30px;
+    display: flex;
+    padding: 0 11px;
+    align-items: center;
+  }
+
+  // .header__searchIcon
+  &__searchIcon {
+    cursor: pointer;
+
+    svg {
+      @include size(12px);
+      fill: $mainFontColor;
+    }
+  }
+
+  //   .header__searchInput
+  &__searchInput {
+    color: $mainFontColor;
+    padding: 0 15px;
+
+    &::placeholder {
+      color: $grey;
+      font-size: rem(12);
+    }
+  }
+}
